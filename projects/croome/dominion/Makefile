@@ -50,29 +50,29 @@ runtests: testDrawCard
 	
 unittestresults: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4
 	./unittest1 >> unittestresults.out
-	gcov unittets1.c >> unittestresults.out
-	cat unittets1.c.gcov >> unittestresult.out
+	gcov dominion.c -f -b >> unittestresults.out
+	cat dominion.c.gcov >> unittestresults.out
 	./unittest2 >> unittestresults.out
-	gcov unittets2.c >> unittestresults.out
-	cat unittets2.c.gcov >> unittestresult.out
+	gcov dominion.c -f -b >> unittestresults.out
+	cat dominion.c.gcov >> unittestresults.out
 	./unittest3 >> unittestresults.out
-	gcov unittets3.c >> unittestresults.out
-	cat unittest3.c.gcov >> unittestresult.out
-	./unittest4 >> unittestresults.out
-	gcov unittets4.c >> unittestresults.out
-	cat unittest4.c.gcov >> unittestresult.out
+	gcov dominion.c -f -b >> unittestresults.out
+	cat dominion.c.gcov >> unittestresults.out
 	./cardtest1 >> unittestresults.out
-	gcov cardtest1.c >> unittestresults.out
-	cat cardtest1.c.gcov >> unittestresult.out
+	gcov dominion.c -f -b >> unittestresults.out
+	cat dominion.c.gcov >> unittestresults.out
 	./cardtest2 >> unittestresults.out
-	gcov cardtest2.c >> unittestresults.out
-	cat cardtest2.c.gcov >> unittestresult.out
+	gcov dominion.c -f -b >> unittestresults.out
+	cat dominion.c.gcov >> unittestresults.out
 	./cardtest3 >> unittestresults.out
-	gcov cardtest3.c >> unittestresults.out
-	cat cardtest3.c.gcov >> unittestresult.out
+	gcov dominion.c -f -b >> unittestresults.out
+	cat dominion.c.gcov >> unittestresults.out
+	cat dominion.c.gcov >> unittestresults.out
+	./unittest4 >> unittestresults.out
+	gcov dominion.c -f -b >> unittestresults.out
 	./cardtest4 >> unittestresults.out
-	gcov cardtest4.c >> unittestresults.out
-	cat cardtest4.c.gcov >> unittestresult.out
+	gcov dominion.c -f -b >> unittestresults.out
+	cat dominion.c.gcov >> unittestresults.out
 
 
 player: player.c interface.o

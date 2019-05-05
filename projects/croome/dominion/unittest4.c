@@ -79,7 +79,7 @@ int main() {
   testG.deck[currentPlayer][decCount -2] = silver;
   printf("Run test game state...\n");
   int result = -1;
-  result = playAdventurer(currentPlayer, &testG, 0);
+  result = playAdventurer(currentPlayer, &testG);
   updateCoins(currentPlayer, &testG,0);
 
 
